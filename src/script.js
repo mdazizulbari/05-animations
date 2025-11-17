@@ -32,7 +32,12 @@ renderer.setSize(sizes.width, sizes.height);
 // Animations
 const tick = () => {
   console.log("Tick");
+
+
   //   Update objects
+  mesh.position.x += 0.01;
+  mesh.position.y += 0.01;
+  mesh.rotation.y += 0.01;
 
   //   Render
   renderer.render(scene, camera);

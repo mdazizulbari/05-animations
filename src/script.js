@@ -43,6 +43,9 @@ const tick = () => {
   mesh.rotation.y = elapsedTime * Math.PI * 2;
   mesh.position.x = Math.sin(elapsedTime);
   mesh.position.y = Math.cos(elapsedTime);
+  camera.position.x = Math.tan(elapsedTime);
+  camera.position.y = Math.tan(elapsedTime);
+  camera.lookAt(mesh.position);
   //   console.log(elapsedTime);
 
   //   Time
